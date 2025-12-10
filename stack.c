@@ -5,6 +5,7 @@
 
 Stack * create_stack(int initial_size)
 {
+	printf("This code was modified by 202213044 구민준\n");
 	Stack * s = (Stack *)malloc(sizeof(Stack));
 	s->contents = (int *)malloc(initial_size*sizeof(Item));
 	s->top=0;
@@ -73,4 +74,5 @@ static void reallocate(Stack * stack)
 	free(stack->contents);
 	stack->contents = tmp;
 }
+
 
